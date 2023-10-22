@@ -1,0 +1,16 @@
+Definições:
+
+	* memória RAM armazena informações enquanto há energia (volátil)
+
+	* Já um HD, SSD ou outro tipo de memória não volátil, consegue guardar valores que podem ser acessados
+  	  posteriormentee
+  	  
+Atribuição e referência:
+
+	* em Java é cópia de valor, SEMPRE.
+	* Com tipos primitivos, copiamos o valor em memória.
+	* Com objetos copiamos o valor da REFERÊNCIA.
+
+Encadeamento de nós:
+
+	* Guarda o primeiro nó e aponta a última referência pra null

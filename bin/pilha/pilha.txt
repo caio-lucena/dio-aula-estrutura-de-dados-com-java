@@ -1,0 +1,14 @@
+LIFO:
+
+	*  Last in First out
+	* O último elemento a entrar, é o primeiro a sair
+	
+Métodos:
+
+	No meuNo = new No();
+
+	* No meuNo = pilha.top(); // recebe a referência de memória do topo da pilha
+	* No meuNo = pilha.pop(); // recebe a referência de memória do topo da pilha, porém, o elemento no topo
+	é retirado, e o topo passa a ser o elemento imediatamente abaixo.
+	
+	* No meuNo = pillha.push(); // coloca um novo elemento no topo da lista.
