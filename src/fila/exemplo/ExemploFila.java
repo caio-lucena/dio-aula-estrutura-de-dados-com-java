@@ -11,13 +11,15 @@ public class ExemploFila {
 		minhaFila.enqueue("Segundo da fila");
 		minhaFila.enqueue("Terceiro da fila");
 		
-		System.out.println(minhaFila);		
+		//System.out.println(minhaFila);
+		System.out.println(minhaFila.first());
 		System.out.println(minhaFila.dequeue());
 		
-		minhaFila.enqueue("Último da fila");
 		
-		System.out.println(minhaFila);		
-		System.out.println(minhaFila.first());
+		//minhaFila.enqueue("Último da fila");
+		
+		//.out.println(minhaFila);		
+		//System.out.println(minhaFila.first());
 
 	}
 
