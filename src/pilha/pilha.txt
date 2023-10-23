@@ -1,6 +1,6 @@
 LIFO:
 
-	*  Last in First out
+	* Last in First out
 	* O último elemento a entrar, é o primeiro a sair
 	
 Métodos:

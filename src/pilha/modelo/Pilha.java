@@ -9,9 +9,8 @@ public class Pilha {
 	}
 	
 	public boolean isEmpty() {
-		var isEmpty = this.referenciaNoEntradaPilha == null? true: false;
+		return this.referenciaNoEntradaPilha == null? true: false;
 		
-		return isEmpty;
 	}
 	
 	public void push(No novoNo) {

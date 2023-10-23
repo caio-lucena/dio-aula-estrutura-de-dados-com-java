@@ -1,0 +1,9 @@
+FIFO:
+
+First in first out
+
+métodos:
+	
+	* isEmpty();
+	* enqueue();
+	* dequeue();
