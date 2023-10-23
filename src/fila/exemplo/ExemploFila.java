@@ -10,6 +10,11 @@ public class ExemploFila {
 		
 		minhaFila.enqueue(new No("Primeiro da fila"));
 		minhaFila.enqueue(new No("Segundo da fila"));
+		minhaFila.enqueue(new No("Terceiro da fila"));
+		
+		System.out.println(minhaFila);
+		
+		minhaFila.dequeue();
 		
 		System.out.println(minhaFila);
 
