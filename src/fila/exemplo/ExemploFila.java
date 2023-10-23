@@ -1,22 +1,23 @@
 package fila.exemplo;
 
 import fila.modelo.Fila;
-import fila.modelo.No;
 
 public class ExemploFila {
 
 	public static void main(String[] args) {
-		Fila minhaFila = new Fila();
+		Fila<String> minhaFila = new Fila<String>();
 		
-		minhaFila.enqueue(new No("Primeiro da fila"));
-		minhaFila.enqueue(new No("Segundo da fila"));
-		minhaFila.enqueue(new No("Terceiro da fila"));
+		minhaFila.enqueue("Primeiro da fila");
+		minhaFila.enqueue("Segundo da fila");
+		minhaFila.enqueue("Terceiro da fila");
 		
-		System.out.println(minhaFila);
+		System.out.println(minhaFila);		
+		System.out.println(minhaFila.dequeue());
 		
-		minhaFila.dequeue();
+		minhaFila.enqueue("Último da fila");
 		
-		System.out.println(minhaFila);
+		System.out.println(minhaFila);		
+		System.out.println(minhaFila.first());
 
 	}
 

@@ -1,30 +1,30 @@
 package fila.modelo;
 
-public class No {
+public class No<T> {
 	
-	private Object object;
-	private No referenciaNo;
+	private T object;
+	private No<T> referenciaNo;
 	
 	public No() {}
 	
-	public No(Object object) {
+	public No(T object) {
 		this.referenciaNo = null;
 		this.object = object;
 	}
 
-	public Object getObject() {
+	public T getObject() {
 		return object;
 	}
 
-	public void setObject(Object object) {
+	public void setObject(T object) {
 		this.object = object;
 	}
 
-	public No getReferenciaNo() {
+	public No<T> getReferenciaNo() {
 		return referenciaNo;
 	}
 
-	public void setReferenciaNo(No referenciaNo) {
+	public void setReferenciaNo(No<T> referenciaNo) {
 		this.referenciaNo = referenciaNo;
 	}
 

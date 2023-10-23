@@ -1,8 +1,8 @@
 package fila.modelo;
 
-public class Fila {
+public class Fila<T>{
 	
-	private No referenciaEntrada;
+	private No<T> referenciaEntrada;
 	
 	public Fila() {
 		this.referenciaEntrada = null;
@@ -12,14 +12,17 @@ public class Fila {
 		return this.referenciaEntrada == null ? true: false;
 	}
 	
-	public void enqueue(No novoNo) {
+	public void enqueue(T object) {
+		
+		No<T> novoNo = new No<T>(object);
+		
 		novoNo.setReferenciaNo(referenciaEntrada);
 		referenciaEntrada = novoNo;
 		
 	}
 	
-	public No first() {
-		No primeiroNo = referenciaEntrada;
+	public T first() {
+		No<T> primeiroNo = referenciaEntrada;
 		
 		if(!this.isEmpty()) {
 			
@@ -33,14 +36,14 @@ public class Fila {
 				}				
 			}			
 		}
-		return primeiroNo;
+		return primeiroNo.getObject();
 		
 	}
 	
-	public No dequeue() {
+	public T dequeue() {
 		
-		No primeiroNo = referenciaEntrada;
-		No noAuxiliar = referenciaEntrada;
+		No<T> primeiroNo = referenciaEntrada;
+		No<T> noAuxiliar = referenciaEntrada;
 		
 		if(!this.isEmpty()) {
 					
@@ -59,14 +62,14 @@ public class Fila {
 			
 		}
 		
-		return primeiroNo;
+		return primeiroNo.getObject();
 	}
 
 	@Override
 	public String toString() {
 		
 		String stringImpressao = "";		
-		No noAuxiliar = referenciaEntrada;
+		No<T> noAuxiliar = referenciaEntrada;
 		
 		if(referenciaEntrada != null) {
 			
@@ -90,7 +93,5 @@ public class Fila {
 		return stringImpressao;
 		
 	}
-	
-	
 
 }
