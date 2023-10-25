@@ -1,0 +1,10 @@
+Lista encadeada
+
+Métodos:
+	
+	* add();
+	* remove();
+	* isEmpty();
+	* get();
+	
+Continuar estudos a partir da aula "Implementação da classe ListaEncadeada(getNo())
