@@ -7,4 +7,4 @@ Métodos:
 	* isEmpty();
 	* get();
 	
-Continuar estudos a partir da aula "Implementação da classe ListaEncadeada(getNo())
+Continuar estudos a partir da aula de explicações teóricas sobre listas duplamente encadeadas
