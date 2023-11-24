@@ -1,4 +1,4 @@
-package lista.dupla;
+package lista.dupla.modelo;
 
 public class NoDuplo <T> {
 	
