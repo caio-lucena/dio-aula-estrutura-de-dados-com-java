@@ -1,0 +1,15 @@
+Conceito de árvores:
+
+- Estrutura de dados bidimensional
+- Não linear
+- Constituída de nós que representam um modelo hierárquico (armazenam os dados com base em relações de dependência)
+
+** Nó folha não possui descendentes e aponta pra null
+
+Árvore binária:
+
+- Posição dos nós
+- Maiores à direita
+- Menores à esquerda
+
+** Exclusão da raiz: pega o maior elementos da esquerda e substitui na raiz que foi excluída
