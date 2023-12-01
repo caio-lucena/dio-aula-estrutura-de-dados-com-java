@@ -1,21 +1,16 @@
 package arvore.modelo;
 
-public class NoBinario<T> implements Comparable<T> {
+public class NoBinario<T extends Comparable<T>> {
 	
 	private T conteudo;
 	private NoBinario<T> noEsquerda;
 	private NoBinario<T> noDireita;
 	
-	public NoBinario(T conteudo, NoBinario<T> noEsquerda, NoBinario<T> noDireita) {
+	public NoBinario() {}
+	
+	public NoBinario(T conteudo) {
 		this.conteudo = conteudo;
-		this.noEsquerda = noEsquerda;
-		this.noDireita = noDireita;
-	}
-
-	@Override
-	public int compareTo(T o) {
-		// TODO Auto-generated method stub
-		return 0;
+		this.noEsquerda = this.noDireita = null;
 	}
 
 	public T getConteudo() {
@@ -40,6 +35,11 @@ public class NoBinario<T> implements Comparable<T> {
 
 	public void setNoDireita(NoBinario<T> noDireita) {
 		this.noDireita = noDireita;
+	}
+
+	@Override
+	public String toString() {
+		return "NoBinario [conteudo = " + conteudo + " ]";
 	}
 
 }
